@@ -1,0 +1,17 @@
+2023-11-20T23:16:27+00:00 CRITICAL Uncaught Error: Call to undefined method ElementorPro\License\Admin::get_installed_time() in C:\xampp\htdocs\ecomerse\wp-content\plugins\pro-elements\core\admin\admin.php:264
+Stack trace:
+#0 C:\xampp\htdocs\ecomerse\wp-includes\class-wp-hook.php(324): ElementorPro\Core\Admin\Admin->change_tracker_params(Array)
+#1 C:\xampp\htdocs\ecomerse\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 C:\xampp\htdocs\ecomerse\wp-content\plugins\elementor\includes\tracker.php(563): apply_filters('elementor/track...', Array)
+#3 C:\xampp\htdocs\ecomerse\wp-content\plugins\elementor\includes\tracker.php(141): Elementor\Tracker::get_tracking_data(true)
+#4 C:\xampp\htdocs\ecomerse\wp-content\plugins\elementor\includes\tracker.php(222): Elementor\Tracker::send_tracking_data(true)
+#5 C:\xampp\htdocs\ecomerse\wp-content\plugins\elementor\core\common\modules\connect\apps\base-app.php(212): Elementor\Tracker::set_opt_in(true)
+#6 [internal function]: Elementor\Core\Common\Modules\Connect\Apps\Base_App->action_get_token()
+#7 C:\xampp\htdocs\ecomerse\wp-content\plugins\elementor\core\common\modules\connect\admin.php(57): call_user_func(Array)
+#8 C:\xampp\htdocs\ecomerse\wp-includes\class-wp-hook.php(324): Elementor\Core\Common\Modules\Connect\Admin->on_load_page('')
+#9 C:\xampp\htdocs\ecomerse\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#10 C:\xampp\htdocs\ecomerse\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 C:\xampp\htdocs\ecomerse\wp-admin\admin.php(237): do_action('load-elementor_...')
+#12 {main}
+  thrown en C:\xampp\htdocs\ecomerse\wp-content\plugins\pro-elements\core\admin\admin.php en la línea 264
+
